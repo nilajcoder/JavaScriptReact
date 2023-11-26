@@ -1,0 +1,18 @@
+.heading-class{
+    color: blue;
+    text-decoration: "line-through";
+    background-color: yellow;
+}
+
+h4{
+    color: brown;
+}
+
+body{
+    background-color: pink;
+}
+
+button{
+    background-color: blue;
+    color: white;
+}
