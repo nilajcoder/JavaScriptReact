@@ -1,0 +1,189 @@
+/* Reset default margin and padding */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-image: url('bg.jpg'); /* Replace 'your-background-image.jpg' with your image URL */
+    background-size: cover; /* Adjust to cover entire body */
+    background-repeat: no-repeat; /* Prevent repeating */
+  }
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set base font and color */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+/* Main section styles */
+main {
+  padding: 20px;
+}
+
+.technologies {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tech-icons img {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+}
+
+.call-to-action {
+  background-color: #e6e6e6;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 5px;
+}
+/* CSS for social links */
+.social-links {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Adjust margin between icons */
+}
+
+.social-links a img {
+  width: 40px; /* Adjust the size of the icons */
+  height: 40px; /* Adjust the size of the icons */
+}
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+/* CSS for technologies section */
+.technologies {
+  text-align: center;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between icons and names */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.tech-icons img {
+  width: 80px;
+  height: auto;
+}
+
+.tech-icons p {
+  margin: 0;
+  text-align: center;
+  width: 80px; /* Set a fixed width for the names */
+}
+
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set base font and color */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  background-color: #c42c2c; /* Reddish tone */
+  text-align: center;
+  padding: 20px;
+  color: #fff; /* White text color */
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 36px; /* Larger font size */
+}
+
+/* Main section styles */
+main {
+  padding: 20px;
+}
+
+.technologies {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Tech icons - your existing styles */
+
+/* Call-to-action styles */
+.call-to-action {
+  background-color: #2c8cc4; /* Blueish tone */
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 10px; /* Adjust margin */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #c42c2c; /* Reddish tone for footer */
+  color: #fff; /* White text color */
+}
+.tech-item img {
+    width: 500px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
