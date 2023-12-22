@@ -1,0 +1,95 @@
+
+/* Reset default margin and padding */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-image: url('bg.jpg'); /* Replace 'your-background-image.jpg' with your image URL */
+  background-size: cover; /* Adjust to cover entire body */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+.red-text {
+  color: red; /* Change 'red' to the color you desire */
+}
+
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.header img {
+  max-width: 200px; /* Adjust the maximum width of the logo */
+  height: auto;
+}
+
+/* Content styles */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.centered-image {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.call-to-action {
+  background-color: #e6e6e6;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.social-links a {
+  margin: 0 5px;
+}
+/* CSS for social links */
+.social-links {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Adjust margin between icons */
+}
+
+.social-links a img {
+  width: 40px; /* Adjust the size of the icons */
+  height: 40px; /* Adjust the size of the icons */
+}
+
+
+
+.header {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-image {
+  order: 1; /* Adjust the order to change image positions */
+}
+
+.right-image {
+  order: 3; /* Adjust the order to change image positions */
+}
