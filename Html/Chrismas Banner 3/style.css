@@ -1,0 +1,113 @@
+/* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Paytone+One&family=Sacramento&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.cardPosition {
+    width: 510px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("./images/image\ \(3\)_cleanup\ \(2\).png");
+    height: 502px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .bgColor {
+    width: 100%;
+    height: 100%;
+    background-color: #44444484;
+} */
+
+.cardStyle {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.leftCard {
+    /* background: #fff; */
+    height: 90px;
+    border-radius: 5px;
+}
+
+.leftCard img {
+    width: 180px;
+}
+
+.crishmasText {
+    padding-top: 20px;
+}
+
+.crishmasText img {
+    width: 225px;
+    height: 100%;
+}
+
+.rightCard {
+    /* text-align: right; */
+}
+
+.rightCard img {
+    width: 100%;
+    height: auto;
+}
+
+.cardText {
+    padding: 0px 0 0 25px;
+}
+
+.cardText p {
+     font-size: 14px;
+     font-weight: 400;
+     font-weight: 700;
+     font-style: oblique;
+}
+
+.cardText h6{
+    font-family: 'Paytone One', sans-serif;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+.footer{
+    margin-top: 42px;
+}
+
+.footer1{
+    background: #006cb5;
+    text-align: center;
+}
+
+.footer1 p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+}
+
+.footer2{
+    background: #ffd302;
+    text-align: center;
+    margin-top: -16px;
+}
+
+.footer2 p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+}
