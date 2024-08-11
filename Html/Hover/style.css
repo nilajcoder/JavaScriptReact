@@ -1,0 +1,16 @@
+/* Styling the box */
+.image-box {
+    width: 300px; /* Set the width of the box */
+    height: 300px; /* Set the height of the box */
+    background-image: url("leaf.jpg"); /* Set the image for the box */
+    background-size: cover; /* Ensure the image covers the box */
+    background-position: center; /* Center the image in the box */
+    border: 2px solid #000; /* Optional: add a border around the box */
+    margin: 20px auto; /* Center the box horizontally */
+    filter: grayscale(100%); /* Convert the image to black and white */
+    transition: filter 0.3s ease; /* Smooth transition for filter changes */
+}
+/* Hover effect: make the image colorful */
+.image-box:hover {
+    filter: grayscale(0%); /* Remove the grayscale filter to show the image in color */
+}
