@@ -1,0 +1,54 @@
+1.The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+
+2.The <html> element is the root element of an HTML page
+
+3.The <head> element contains meta information about the HTML page
+
+4.The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+
+5.The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+6.The <h1> element defines a large heading
+
+7.The <p> element defines a paragraph
+8.<br> defines break line
+
+9.The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+10.The HTML <p> element defines a paragraph.
+
+11.The <title> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
+
+12.The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+
+13.Metadata is data about the HTML document. Metadata is not displayed.
+
+14.The <link> tag defines the relationship between the current document and an external resource.
+
+15.The <form> tag is used to create an HTML form for user input
+
+16.The <input> tag specifies an input field where the user can enter data
+
+17.The <ul> tag defines an unordered (bulleted) list.
+
+Use the <ul> tag together with the <li> tag to create unordered lists.
+
+18.The lang attribute specifies the language of the element's content en for English
+
+19.The <button> tag defines a clickable button.
+
+20.Each table row starts with a <tr> and ends with a </tr> tag.
+
+tr stands for table row.
+
+
+21.Each table cell is defined by a <td> and a </td> tag.
+
+td stands for table data.
+
+22.th stands for table header.
+
+<table>: This tag defines the start and end of the table.
+<tr> (table row): This defines a row in the table.
+<td> (table data): This defines a cell within a row.
+<th> (table header): This is used to define header cells, which typically appear bold and centered by default.
