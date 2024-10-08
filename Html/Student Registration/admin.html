@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* New class for the background image */
+        .background-image {
+            background-image: url("admin.jpg");
+            background-size: contain; /* Resize the image to fit */
+            background-position: bottom; /* Position the image at the bottom */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            height: 400px; /* Set height for the image container */
+            margin-top: -100px; /* Adjust the margin as needed to place the image below the table */
+            position: relative;
+            z-index: -1; /* Place the image behind other content */
+        }
+     
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
@@ -19,7 +33,7 @@
     <h3>Manage Students</h3>
 
     <!-- Display students list (use back-end to populate this) -->
-    <table border="1">
+    <table border="1" style="margin: 0 auto; text-align: center; border-collapse: collapse;">
         <tr>
             <th>Class</th>
             <th>Section</th>
@@ -37,5 +51,6 @@
             </td>
         </tr>
     </table>
+    <div class="background-image"></div>
 </body>
 </html>

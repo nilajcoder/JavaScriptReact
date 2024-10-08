@@ -4,10 +4,10 @@ body {
     color: #333;
     padding: 20px;
     text-align: center;
+    
 }
-
 h2 {
-    color: #4682b4;
+    color: black;
 }
 
 form {
@@ -31,5 +31,30 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #4169e1;
+    background-color: black;
 }
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 10px 10;
+    background-color: blue; /* Background color for the list */
+    overflow: hidden; /* Ensures the list doesn't break on new lines */
+}
+
+ul li {
+    display:inline-table; /* Display list items in a horizontal row */
+    padding: 0%;
+}
+
+ul li a {
+    color: white; /* Text color for the links */
+    padding: 14px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: black; /* Hover effect */
+}
+
