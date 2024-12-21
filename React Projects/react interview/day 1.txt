@@ -1,0 +1,116 @@
+1. React is a library because of its focus on a specific purpose (UI rendering) and flexibility to integrate with other tools.
+However, when combined with tools and libraries, it can be used as a framework-like solution.
+
+
+Definition: React is a JavaScript library developed by Facebook for building user interfaces, primarily for single-page applications.
+
+2. Framwork vs Library
+
+A framework is like a blueprint that defines the application's architecture and controls the flow, where you plug in your code (e.g., Angular).
+
+
+ A library, on the other hand, is a toolset you call to perform specific tasks, keeping you in control of the flow (e.g., React).
+
+
+3. Real Dom vs Virtual Dom
+
+REAL DOM
+
+The actual Document Object Model (DOM) used by the browser to render the UI.
+It represents the structure of the web page as a tree of HTML nodes.
+
+
+VIRTUAL DOM
+
+Definition:
+
+A lightweight in-memory representation (or copy) of the Real DOM, used by frameworks like React.
+
+
+4. Fragment usage
+
+Fragment is useful when you need to return multiple elements from a component without adding extra nodes to the DOM.
+
+5. JSX - JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with React to describe what the UI should look like. 
+It allows you to write HTML-like code within JavaScript, making it easier to create and manage UI components.
+
+6. Render Method : The render() method in React is used to describe what should be displayed on the screen by returning JSX (or React.createElement) from a component.
+
+7.Code splitting
+
+Code splitting is a technique in web development, especially in React, that allows you to split your application’s
+ bundle into smaller chunks or "splits" which can be loaded on demand, improving the initial load time and performance of your app.
+
+8. What are the different ways to improve react
+
+Code splitting, Use useMemo and useCallback Hooks, 
+Lazy Load Images and Assets: Purpose: Improve performance by loading images and other assets only when they are visible in the viewport.
+
+
+9. 
+useState: Ideal for managing simple state, where state updates are independent and don’t require complex logic. 
+It’s a hook that returns an array with the current state value and a function to update it.
+
+useReducer: Used for more complex state management, especially when the state updates depend on multiple actions or involve more logic. 
+It provides a way to handle state transitions using actions and a reducer function, similar to Redux.
+
+
+10. A Higher-Order Component is a function that:
+
+Takes a component as an argument.
+Returns a new component with additional logic or functionality.
+
+11. When to Use an HOC:
+Code Reusability:
+
+When you have common logic that needs to be shared across multiple components. 
+Instead of duplicating the same code, you can wrap different components with the same HOC.
+
+
+12. A component in React is a reusable, self-contained unit of UI that accepts
+      inputs (props) and returns a React element to be rendered on the screen.
+Class Component Functional Component
+
+
+13. Use Functional Components with hooks for new projects, modern React apps, and when you need state management or lifecycle features.
+Use Class Components if you’re working on legacy projects that still rely on class-based components,
+ or if you prefer their syntax (though this is increasingly rare).
+Functional components are now the best practice in React development.
+
+
+14. Stateless: Often functional components in modern React (before hooks, they were class components).
+    Stateful: Often class components in older React versions, but can also be functional components using hooks (useState, useEffect).
+
+
+15. useMemo:
+Purpose: Used to memoize the result of a computation (or value) so that React doesn't recompute it on every render unless the dependencies change.
+
+When to Use useMemo vs useCallback:
+Use useMemo when you have a computation that you want to avoid re-running on every render, such as a filter, sort, or expensive calculation.
+Use useCallback when you're passing functions to child components and want to avoid creating a new function instance on every render, 
+which can cause unnecessary re-renders of the child components.
+
+
+16. In HTML, multipart/form-data is the encoding type used for forms that handle large file uploads and mixed data
+ (like text and files). By setting the enctype attribute to multipart/form-data
+
+
+17. fig vs img
+
+Use Cases:
+
+<img>: Used alone when you need to display an image.
+<figure>: Used when you want to group the image with its description, such as for articles,
+           blogs, galleries, or any content where you need to associate media with additional context.
+
+
+18. How it Works: required attribute
+When the required attribute is added to a form element, the browser will check if the field has been filled out when the form is submitted.
+If the field is empty, the form submission will be prevented, and the browser will typically show a message indicating that the field is required.
+
+
+19. <marquee> tag was once commonly used to create scrolling content, it is now obsolete
+
+
+20. The <figcaption> tag is a useful HTML element for adding captions to images, videos, and other media elements.
+
