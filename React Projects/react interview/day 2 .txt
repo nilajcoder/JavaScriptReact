@@ -1,0 +1,110 @@
+1.React follows one way data binding or two way data binding?
+React follows one-way data binding.
+
+Explanation:
+In React, data flows in a single direction — from parent components to child components. This is referred to as one-way data binding.
+
+Parent to Child Flow:
+
+Data is passed from the parent component to the child component via props.
+The child component cannot directly modify the parent’s state; it can only receive the data and use it.
+
+
+
+
+2. Props: Props are a way to pass data from a parent component to a child component in React.
+They are immutable within the child component and provide one-way data flow.
+Props allow you to customize and re-use components with different data.
+
+
+
+3. props vs state?
+
+When to Use
+Props:
+
+Use props when you want to pass data from parent to child or configure a child component based on data.
+For example, displaying user information in a child component or passing callback functions.
+State:
+
+Use state for data that changes over time or in response to user actions, events, or API calls.
+For example, tracking form input, toggling visibility, or handling the results of a network request.
+
+
+
+4.How to Pass Data from Child to Parent:?
+
+Parent component defines a function (callback).
+Parent component passes this function to the child component via props.
+Child component calls the function passed via props and passes the data back to the parent.
+
+5. What is Key?
+
+In React, keys are special identifiers used in lists of elements to help React
+ identify which items have changed, been added, or removed. They are necessary when rendering dynamic lists of components or elements.
+
+
+
+6.Contemporay of react js?
+
+React :is the best choice for flexibility, a large ecosystem, and when you want to create dynamic user interfaces with reusable components.
+Vue :is great if you need simplicity, flexibility, and a gentle learning curve, especially for smaller projects or when you prefer minimal setup.
+Angular: is ideal for large-scale applications with complex requirements, where you need a comprehensive solution for routing, state management, and more.
+Svelte: shines if you want a highly efficient framework with less overhead and faster performance, particularly for small to medium-sized projects.
+Preact: is a perfect choice for performance-sensitive apps where bundle size matters, while still keeping compatibility with React.
+Lit: is best when building Web Components that need to be highly reusable across different platforms and frameworks.
+
+
+7.
+No, Angular does not use a virtual DOM like React. Instead, Angular uses real DOM for its updates.
+
+
+8.Summary of Lifecycle Methods (Class Components):
+Mounting: constructor(), getDerivedStateFromProps(), render(), componentDidMount()
+Updating: getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()
+Unmounting: componentWillUnmount()
+In functional components, the useEffect() hook is used to replicate the functionality of class component lifecycle methods.
+
+
+9. Primitive types are basic types like strings, numbers, and booleans.
+Non-primitive (reference) types include objects, arrays, and functions, and they are stored in memory as references.
+
+
+10.Axios
+Axios is a popular JavaScript library used to make HTTP requests
+
+Key Features of Axios:
+Promise-based: Axios uses Promises for handling asynchronous HTTP requests and responses.
+Supports all HTTP methods: GET, POST, PUT, DELETE, PATCH, etc.
+
+
+
+11. Selectors in CSS
+
+Summary of Key Selectors:
+Universal Selector (*): Targets all elements.
+Type Selector (e.g., div, p): Targets elements by type.
+Class Selector (.class): Targets elements with a specific class.
+ID Selector (#id): Targets a single element with a specific ID.
+Attribute Selectors: Targets elements based on attributes.
+Pseudo-Classes: Target elements based on their state or position (e.g., :hover, :first-child).
+Pseudo-Elements: Target specific parts of an element (e.g., ::before, ::first-letter).
+
+Priority Order (Highest to Lowest):
+Inline styles (e.g., style="color: red;"): Highest specificity, directly in the element.
+ID Selectors (#id): Higher specificity than class, attribute, and type selectors.
+Class Selectors, Attribute Selectors, Pseudo-Classes (.class, [type="text"], :hover): Medium specificity.
+Type Selectors (div, p): Low specificity.
+Universal Selector (*): Lowest specificity.
+
+
+12. anchor tag for hyperlink
+13.atrribute
+In HTML, attributes provide additional information about an element and help define its 
+properties or behavior. They are written within the opening tag of an element and are used to modify the element's default behavior.
+
+Here’s an overview of some 
+id class required value placeholder href target img 
+
+14. The <iframe> tag in HTML is used to embed another HTML document within the current document. 
+It creates an inline frame, which acts as a "window" to display another webpage, video, or interactive content.
