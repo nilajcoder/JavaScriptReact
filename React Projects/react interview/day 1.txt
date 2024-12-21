@@ -114,3 +114,36 @@ If the field is empty, the form submission will be prevented, and the browser wi
 
 20. The <figcaption> tag is a useful HTML element for adding captions to images, videos, and other media elements.
 
+21. Redux is a predictable state container for JavaScript applications,
+ commonly used with React. It helps manage the state of an application in a way that makes
+ it easier to maintain, debug, and scale. Redux centralizes the application's state and logic,
+ allowing for more predictable behavior and easier debugging of applications.
+
+Key Concepts of Redux:
+1.Store:
+
+The store is the central place where the entire state of your application is stored.
+ It holds the current state and provides methods to access, update, and subscribe to changes in the state.
+There is only one store for the entire application, and the state is stored in a single JavaScript object.
+
+
+2.Actions:
+
+Actions are plain JavaScript objects that describe what happened in the application.
+ They must have a type property that describes the action, and they can optionally carry additional data (payload).
+
+
+3. Reducers:
+
+Reducers are pure functions that specify how the application's state should change in response to an action.
+ They take the current state and an action as arguments and return a new state.
+
+
+4.Dispatch:
+
+The dispatch function is used to send actions to the store. When an action is dispatched, 
+it triggers the reducer to update the state accordingly.
+
+5. Selectors:
+
+Selectors are functions that allow you to extract specific pieces of data from the state.
