@@ -69,3 +69,15 @@ function infiniteocc(val1){
     }
 }
 console.log(infiniteocc(1)(2)())
+
+/*
+Sort 
+*/
+let ar = [1, 9, 5, 2, 65, 6];
+arr.sort((a, b) => a - b); // Sort in ascending order
+console.log(ar); // Output: [1, 2, 5, 6, 9, 65]
+
+
+let xy = [1, 9, 5, 2, 65, 6];
+arr.sort((a, b) => b - a); // Sort in descending order
+console.log(xy); // Output: [65, 9, 6, 5, 2, 1]
