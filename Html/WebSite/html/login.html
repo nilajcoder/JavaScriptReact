@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/home.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+           <a href="home.html">Home</a>
+           <a href="#">About</a>
+           <a href="login.html">Login</a>
+           <a href="#">Contact</a>
+           <a href="register.html">Register</a>
+        </nav>
+        
+       </header>
+
+
+    <div class="login-container">
+        <h1>Login Page</h1>
+        <form onsubmit="redirectToRegister(event)" >
+            <label for="email">Email:</label><br>
+            <input type="text" id="username" placeholder="Type Your username" name="username"><br><br>
+            <label for="password" >Password:</label><br>
+            <input type="password" id="password" placeholder="Type your password" name="password"><br><br>
+            <input type="submit"  value="Login">
+
+            <p>Forgot your password? <a href="#">Reset it here</a></p>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+    
+        </form>
+    </div>
+       
+        <script src="/script/demo.js"></script>
+</body>
+</html>

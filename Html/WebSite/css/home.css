@@ -1,0 +1,164 @@
+/*
+it is id selector based and uses flexbox for layout.
+element selector based and uses flexbox for layout.
+
+types of css
+1. Inline CSS
+answer : inline css is used to apply a unique style to a single element.
+ It is defined within the HTML tag using the style attribute.
+example: <h1 style="color:blue;">Hello World</h1>
+2. Internal CSS
+ans : Internal CSS is used to define styles for a single HTML document.
+ It is defined within the <style> tag in the <head> section of the HTML document.
+
+example: <style> h1 {color:blue;} </style>
+3. External CSS
+answer: External CSS is used to define styles for multiple HTML documents.
+ It is defined in a separate CSS file and linked to the HTML document using the <link> tag.
+
+answer: <link rel="stylesheet" type="text/css" href="style.css">
+
+
+1.slectors in css?
+Answer: Selectors are used to select the elements in the HTML document.
+There are different types of selectors in CSS:
+i) Element selector 
+Definition: The element selector is used to select the elements in the HTML document.
+syntax: h1 { color: red; }
+ii) Class selector
+Definition: The class selector is used to select the elements with the specific class in the HTML document.
+syntax: .class { color: red; }
+iii) ID selector
+Definition: The ID selector is used to select the element with the specific ID in the HTML document.
+syntax: #id { color: red; }
+iv) Universal selector
+Definition: The universal selector is used to select all the elements in the HTML document.
+syntax: * { color: red; }
+v) Attribute selector
+Definition: The attribute selector is used to select the elements with the specific attribute in the HTML document.
+syntax: [attribute] { color: red; }
+vi) Pseudo-class selector
+Definition: The pseudo-class selector is used to select the elements with the specific state in the HTML document.
+syntax: :hover { color: red; }
+vii) Pseudo-element selector
+Definition: The pseudo-element selector is used to select the part of the element in the HTML document.
+syntax: ::before { content: 'Hello'; }
+
+**priroty given to the css selectors it is highest to lowest?
+Answer: The priority of the CSS selectors is as follows:
+
+1. Inline styles
+2. ID selectors
+3. Class selectors
+4. Element selectors
+5. Universal selectors
+6. Attribute selectors
+7. Pseudo-class selectors
+8. Pseudo-element selectors
+
+
+**lower to higher priority of css selectors?
+Answer: The priority of the CSS selectors is as follows:
+1. Pseudo-element selectors
+2. Pseudo-class selectors
+3. Attribute selectors
+4. Universal selectors
+5. Element selectors
+6. Class selectors
+7. ID selectors
+8. Inline styles
+
+*/
+
+h1{
+    text-align: center;
+    color: azure;
+    
+
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+
+
+/*
+
+    * Home.css
+    * This CSS file styles the home page of the website.
+    * It includes styles for the header, navigation bar, and links
+
+    it is class based and uses flexbox for layout.
+
+    */
+
+
+/* General header styling */
+
+.background {
+    
+    background: url('../img/homebg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.header {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling for the links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}

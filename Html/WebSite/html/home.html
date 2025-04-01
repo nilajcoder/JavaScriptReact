@@ -1,0 +1,136 @@
+<!-- This is a simple HTML document structure -->
+<!-- It includes the necessary DOCTYPE declaration, html, head, and body tags -->
+<!-- The lang attribute in the html tag specifies the language of the document -->
+<!-- The meta charset tag specifies the character encoding for the HTML document -->
+<!-- The meta viewport tag is used for responsive web design, ensuring proper scaling on different devices -->
+<!-- The title tag sets the title of the document, which appears in the browser tab -->
+<!-- The body tag contains the content of the document, which is currently empty -->
+<!-- You can add your content inside the body tag as needed -->
+ <!-- 
+   1. what is html?
+    HTML (HyperText Markup Language) is the standard markup language for creating web pages.
+    It is used to structure content on the web and
+     consists of a series of elements or tags that define the different parts of a webpage.
+    HTML elements can include headings, paragraphs, links, images, lists, and more.
+2.what is web pages?
+Web pages are documents that are displayed in a web browser
+ and can contain text, images, videos, and other multimedia elements.
+ 3. what is meta ?
+ "Meta" is short for "metadata," which means "data about data." 
+ In web development, meta tags provide additional information about
+  a webpage but are not visible to users. These tags are placed inside the <head> section of an HTML document.
+
+    4. what is title?
+    a title tag is an HTML element that defines the title of a webpage.
+     The title is displayed in the browser's title bar or tab and is also used by 
+     search engines as the clickable headline for search results.
+
+5. what is head tag?
+a head tag is an HTML element that contains meta-information about a webpage.
+ It is placed within the <html> element and typically includes elements like <title>, <meta>, <link>, and <script> tags.
+ The content inside the <head> tag is not displayed on the webpage itself but provides
+     important information for browsers and search engines.
+6. what is dom?
+The Document Object Model (DOM) is a programming interface for web documents.
+ It represents the structure of a webpage as a tree of objects,
+  allowing developers to manipulate the content and structure of the page using JavaScript.
+ The DOM provides methods and properties to access and modify elements, attributes, and styles in the HTML document.
+
+ 7.html is case sensitive or not?
+HTML is not case-sensitive,
+ meaning that HTML tags and attributes can be written in either uppercase or
+  lowercase letters, or a combination of both. However, it is a 
+  common practice to write HTML tags in lowercase for consistency and readability.
+   For example, <html>, <head>, and <body> can be written as <HTML>, <HEAD>, and <BODY>, but it is recommended to use lowercase.
+
+8.html is dom ?
+The Document Object Model (DOM) is not HTML itself, but rather a representation of the HTML document in a structured format.
+ The DOM is created by the web browser when it loads an HTML document
+  and provides a way for programming languages like JavaScript to interact with and manipulate the content of the webpage.
+ In summary, HTML is the markup language used to create web pages, 
+ while the DOM is the object-oriented representation of that HTML document in memory.
+
+ 9. what is html element?
+An HTML element is a fundamental building block of an HTML document.
+ It consists of a start tag, content, and an end tag.
+  HTML elements can represent various types of content, such as text, images, links, forms, and more.
+  For example, the <p> element represents a paragraph of text, while the <img> element represents an image.
+  Each HTML element can also have attributes that provide additional information about the element.
+
+10.what is attribute?
+An attribute is a special characteristic of an HTML element that provides additional information about that element.
+ Attributes are always specified in the start tag and come in name/value pairs, such as name="value".
+  For example, the <img> element can have attributes like src (source) and alt (alternative text)
+   to specify the image file and its description.
+  Attributes help define the behavior and appearance of HTML elements on a webpage.
+
+
+  11. what is navbar?
+Navbar, short for navigation bar, is a user interface element that provides links to different sections or pages of a website.
+ example of a navbar is a horizontal or vertical list of links that allows users to navigate through the website easily.
+ tags of navbar are <nav> and <ul> and <li> and <a> tags.
+    The <nav> tag is used to define the navigation section, while the <ul> tag creates an unordered list of links.
+     Each link is represented by an <li> (list item) tag, and the actual link is created using the <a> (anchor) tag.
+
+12. what block element?
+A block element is an HTML element that occupies the full width available and starts on a new line.
+ Block elements create a "block" of content and can contain other block or inline elements.
+ Examples of block elements include <div>, <p>, <h1> to <h6>, <ul>, <ol>, and <li>. 
+ These elements are typically used to structure the layout of a webpage and create distinct sections of content.
+
+13. what is inline element?
+An inline element is an HTML element that does not start on a new line and only takes up as much width as necessary.
+ Inline elements are typically used to format small portions of text or other content within a block-level element.
+ Examples of inline elements include <span>, <a>, <strong>, <em>, and <img>. 
+ Unlike block elements, inline elements can be placed within block elements without disrupting the flow of the document.
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css"/>
+</head>
+<body>
+    
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="register.html">Register</a></li>
+
+      </ul>
+
+    <header class="header">
+        <nav class="navbar">
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="login.html">Login</a>
+           <a href="#">Contact</a>
+           <a href="register.html">Register</a>
+        </nav>
+        
+       </header>
+
+
+    <div class="background">
+
+        
+    <h1>Welcome to My Home Page </h1>
+    <p>This is a my home page.</p>
+   
+
+
+
+    </div>
+
+    
+    
+</body>
+</html>
