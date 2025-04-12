@@ -1,0 +1,14 @@
+.rectangle-register {
+  height: 400px;
+  width: 350px;
+  border: 2px solid rgb(26, 29, 24);
+  align-items: center;
+  background-color: rgb(204, 194, 194);
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+}
