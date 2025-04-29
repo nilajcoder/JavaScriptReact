@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    background-color: #8498b7;
+    margin: 10px;
+    padding: 10 px;
+    color: #333;
+  }
+  .container  {
+
+    width: 90%;
+    height: 520px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    color: black;
+    
+  }
+
+
+  .navbar   {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 300px;
+    justify-content: right;
+   
+  }
+
+
+  .rectangle{
+    width: 75%;
+    height: 500px;
+    background-color: #8498b7;
+    margin: 0 auto;
+    padding: 5px;
+    
+  
+    
+    justify-content: right;
+   
+    border: black solid 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  }
+
+ .text p{
+  padding: 20px;
+   margin: 0px;  
+ }
+
+ .heading h1{
+   padding: 0px;
+   margin: 0px;  
+ }
+ 
+
+ .Image img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0px;
+    padding: 0px;
+    border: black solid 2px;
+    align-items: center;
+    justify-content: left
+    
+ }
+
+ .Image{
+    display: flex;
+    justify-content: left;
+   gap : 20px;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    margin-left: 20px;
+ }
+
+ .minirec{
+    width: 75%;
+    height: 200px;
+    background-color: #8498b7;
+    margin: 0 auto;
+    padding: 5px;
+    justify-content: left;
+    border: black solid 2px;
+    margin-top: auto;
+   
+    
+ }
+
+
+ .col-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
