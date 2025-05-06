@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+
+.form{
+
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.email1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.name1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.password1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}   
+
+.phone1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.conpass1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}   
+.pass1{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

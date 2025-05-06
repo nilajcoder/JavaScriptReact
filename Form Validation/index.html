@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <h1>This is Heading</h1>
+    <h2>Registration Form</h2>
+    <p>Please fill in this form to create an account.</p>
+
+    <form class="form" onsubmit="validateForm()">
+      
+
+        <label for="name">Name</label>
+        <input type="text" class="name1" id="name" name="name" placeholder="Enter your name" >
+        <br><br>
+        <label for="email">Email</label>
+        <input type="text" class="email1" id="email" name="email" placeholder="Enter your email" >
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" class="phone1" id="phone" name="phone" placeholder="Enter your phone number">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" class="pass1" id="password" name="password" placeholder="Enter your password">
+        <br><br>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" class="conpass1" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+        <br><br>
+
+        <submit type="submit" value="Submit">
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script>
+
+        function validateForm(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var phone=document.getElementById("phone").value;
+            var password=document.getElementById("password").value;
+            var confirmPassword=document.getElementById("confirm-password").value;
+
+            var phoneregex=/^\+?[1-9][0-9]{7,14}$/;
+
+            var emailregex= /^\S+@\S+\.\S+$/;
+            
+            if(name===""||email===""||phone===""||password===""||confirmPassword===""){
+                alert("All fields are required");
+                return false;
+    
+            }
+
+            if(!emailregex.test(email)){
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            if(!phoneregex.test(phone)){
+                alert("Please enter a valid phone number");
+                return false;
+            }
+
+            if(password.length<6){
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            if(password!==confirmPassword){
+                alert("Passwords do not match");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+
+
+
+
+
+
+
+          
+
+
+
+            
+        }
+    </script>
+
+</body>
+</html>
