@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    
+
+    <header>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+
+    <div class="temperature-converter-container">
+        <h2>Temperature Converter</h2>
+        <label for="temperature">Enter Temperature:</label>
+        <input type="text" id="temperature" placeholder="Enter temperature">
+        
+        <label for="unit">Select Unit:</label>
+        <select id="unit">
+            <option value="Celsius">Celsius to Fahrenheit</option>
+            <option value="Fahrenheit">Fahrenheit to Celsius</option>
+        </select>
+        
+        <button onclick="convertTemperature()">Convert</button>
+        
+        <p id="result"></p>
+
+
+    <script>
+          function convertTemperature() {
+            const temperatureInput = document.getElementById('temperature').value;
+            const unit = document.getElementById('unit').value;
+            let resultText = '';
+        
+            if (temperatureInput === '') {
+              resultText = 'Please enter a temperature!';
+            } else {
+              let temperature = parseFloat(temperatureInput);
+              if (unit === 'Celsius') {
+                const fahrenheit = (temperature * 9/5) + 32;
+                resultText = `${temperature}°C is equal to ${fahrenheit.toFixed(2)}°F.`;
+              } else {
+                const celsius = (temperature - 32) * 5/9;
+                resultText = `${temperature}°F is equal to ${celsius.toFixed(2)}°C.`;
+              }
+            }
+        
+            document.getElementById('result').innerText = resultText;
+          }
+        </script>
+        
+</body>
+</html>
