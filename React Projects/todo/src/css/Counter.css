@@ -1,0 +1,51 @@
+/* About.css */
+.about-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-container p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.about-container button {
+  margin: 10px;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.about-container button:nth-child(3) {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.about-container button:nth-child(4) {
+  background-color: #f44336;
+  color: white;
+}
+
+.about-container button:nth-child(5) {
+  background-color: #2196F3;
+  color: white;
+}
+
+.about-container button:hover {
+  opacity: 0.9;
+}
