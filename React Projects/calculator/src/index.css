@@ -1,0 +1,39 @@
+.calculator-container {
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #222;
+  box-shadow: 0 0 15px #000;
+}
+
+.display {
+  background: black;
+  color: white;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.operator {
+  background-color: orange;
+}
+
+.btn.operator:first-child {
+  background-color: purple;
+  color: white;
+}
