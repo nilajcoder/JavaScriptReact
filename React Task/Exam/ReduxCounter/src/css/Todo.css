@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.todocon {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+/* Form styling */
+.todoform {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todoform input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.todoform input:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.todoform button {
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.todoform button:hover {
+  background: #005f99;
+}
+
+/* Task list */
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#todo-list li:hover {
+  background: #e9f3fa;
+}
+
+.delete {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete:hover {
+  background: #d93636;
+}
