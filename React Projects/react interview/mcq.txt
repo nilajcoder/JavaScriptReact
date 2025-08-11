@@ -1,0 +1,30 @@
+📘 Section A (1 mark each)
+What does JSX stand for?
+✅ A) JavaScript XML
+
+Which hook is used to manage state in a functional component?
+✅ B) useState
+
+Props in React are:
+✅ C) Passed from parent to child
+
+What is the default method to pass data between components?
+✅ B) Props
+
+Which hook is used to run side effects?
+✅ D) useEffect
+
+In React Router, which component is used to handle route changes without reloading?
+✅ B) <Link>
+
+Which of the following is NOT a valid lifecycle phase for a functional component?
+✅ D) Freezing
+
+What is the purpose of a reducer in Redux?
+✅ C) To return a new state based on the action
+
+Which hook allows sharing logic between components?
+✅ C) Custom Hooks
+
+Middleware in Redux is used for:
+✅ B) Logging and async calls
