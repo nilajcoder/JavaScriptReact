@@ -10,8 +10,8 @@ const One = () => {
 
    {/* If we click handleClickTwo increment by infinite */}
    useEffect(()=>{
-     setCounttwo((pre)=>pre+1),[count]  
-   })
+     setCounttwo((counttwo)=>counttwo+1)
+   } ,[counttwo])
 
 
      {/* If we click handleClickTwo increment by infinite */}
