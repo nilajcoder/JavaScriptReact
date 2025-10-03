@@ -1,0 +1,434 @@
+1. import React, { useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+     const handleClick=()=>{
+     setcount(count+1)    
+
+  }
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment by 1</button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+count → the state variable (initially 0).
+
+setcount → function used to update the state.
+
+useState(0) → initializes the count variable with value 0.
+
+
+
+When the button is clicked, handleClick runs.
+
+It calls setcount(count + 1), which updates count by adding 1.
+
+Output:  One Time 1 Second Time 2 so on .....
+
+
+
+2.
+import React, { useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+     const handleClick=()=>{
+     setcount(count+1)  // count is still 0 → schedules count = 1  
+     setcount(count+1) // count is still 0 → schedules count = 1
+     setcount(count+1) // count is still 0 → schedules count = 1
+     setcount(count+1)// count is still 0 → schedules count = 1
+     setcount(count+1)
+
+  }
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment by one </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+Here, count is captured once when the function runs.
+
+Even if you call setcount(count+1) multiple times, React batches them together → so only the last one is applied.
+
+That means your code effectively becomes:
+
+count = count + 1
+
+
+(one time only).
+
+
+Output:  One Time 1 Second Time 2 so on .....
+
+
+
+3. import React, { useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+     const handleClick=()=>{
+     setcount(count=>count+1)    
+   
+
+  }
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment by one </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+
+
+Output:  One Time 1 Second Time 2 so on .....
+
+
+
+4. import React, { useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+     const handleClick=()=>{
+     setcount(count=>count+1)  
+     setcount(count=>count+1)  
+   
+
+  }
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment by two </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+Output : Increment by 2 first time then 4 and so on .....
+
+
+
+5. import React, { useEffect, useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+
+
+       useEffect(() => {
+    setcount(count + 2);
+  }, []);
+
+
+    const handleClick = () => {
+    setcount(count => count + 1); // increment on button click
+  };
+
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment  </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+Output : 2    After Clicking 3 then 4 5 and so on 
+
+
+6. import React, { useEffect, useState } from 'react'
+
+const Four = () => {
+
+    const [count,setcount]=useState(0)
+
+
+
+       useEffect(() => {
+    setcount(count + 2);
+  }, [count]);
+
+
+    const handleClick = () => {
+    setcount(count => count + 1); // increment on button click
+  };
+
+
+  return (
+    <div>
+    
+     <p>{count}</p>
+    <button onClick={handleClick}>Increment  </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+Output : Infinite   Click Korte Hobe na button
+
+Initial Render
+
+count = 0 (from useState(0)).
+
+React mounts the component, then runs useEffect.
+
+Effect runs:
+
+Calls setcount(count + 2) → setcount(0 + 2) → schedules count = 2.
+
+Re-render (because state changed)
+
+Now count = 2.
+
+React renders again.
+
+After render, effect runs (because [count] dependency changed).
+
+Effect runs:
+
+Calls setcount(count + 2) → setcount(2 + 2) → schedules count = 4. and Infinite Loop
+
+   useEffect(() => {
+    setcount(count + 2);
+  });
+
+Same Wuth This Infinite
+
+
+
+
+1️⃣ Basic useState increment
+const [count, setcount] = useState(0);
+
+const handleClick = () => {
+  setcount(count + 1);
+};
+
+
+Each click reads the current count and schedules count + 1.
+
+Output: Click 1 → 1, Click 2 → 2, Click 3 → 3 … ✅
+
+2️⃣ Multiple setcount(count + 1) calls
+const handleClick = () => {
+  setcount(count + 1);
+  setcount(count + 1);
+  setcount(count + 1);
+  setcount(count + 1);
+  setcount(count + 1);
+};
+
+
+Here, count is captured once when handleClick runs (let’s say 0).
+
+All setcount(count + 1) schedule the same update → React batches them.
+
+Effectively, count increases by 1 only, not 5.
+
+Output: Click 1 → 1, Click 2 → 2 … ✅
+
+3️⃣ Using functional update
+setcount(count => count + 1);
+
+
+Functional form reads the latest value of count each time.
+
+With a single call, behaves like example 1.
+
+Output: Click 1 → 1, Click 2 → 2 … ✅
+
+4️⃣ Functional update called multiple times
+setcount(count => count + 1);
+setcount(count => count + 1);
+
+
+Each functional update sees the latest count, so updates add up.
+
+Output:
+
+Click 1 → 2
+
+Click 2 → 4
+
+Click 3 → 6 … ✅
+
+5️⃣ useEffect runs once
+useEffect(() => {
+  setcount(count + 2);
+}, []);
+
+
+[] dependency → runs once after mount.
+
+Initial count = 0 → effect sets count = 2.
+
+Button click increments by 1.
+
+Output:
+
+Initial render → 2
+
+Click 1 → 3
+
+Click 2 → 4 … ✅
+
+6️⃣ useEffect depends on count
+useEffect(() => {
+  setcount(count + 2);
+}, [count]);
+
+
+Dependency [count] → effect runs every time count changes.
+
+Initial count = 0 → effect sets count = 2 → triggers re-render → effect runs again → count = 4 → infinite loop.
+
+No button click needed. Infinite increments happen automatically.
+
+Output: Infinite loop ✅
+
+⚠️ Warning: This will crash the browser if used as-is.
+
+
+
+7. const handleClick = () => {
+  setcount(count + 1);
+  setcount(count + 2);
+};
+Question: Initial count = 0. After first click, count = ?
+A) 1
+B) 2 ✅
+C) 3
+D) 0
+
+Explanation: React batches updates → last setcount wins (count + 2 → 2).
+
+
+
+8.import React, { useEffect, useState } from 'react'
+
+const Four = () => {
+
+    const [data,setdata]=useState("apple")
+
+
+
+
+
+    const handleClick = () => {
+    setdata("banana"); // setdata
+    console.log(data) // First Click First Time Apple  then second Click banana
+  };
+
+
+  return (
+    <div>
+    
+     <p>{data}</p> 
+    <button onClick={handleClick}> Change Data </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+Output : after clicking the button Banana
+
+
+
+    const handleClick = () => {
+    setdata("banana"); // setdata
+    console.log(data) // First Click First Time Apple  then second Click banana
+  };
+
+To overcome this Problem use useeffect
+
+import React, { useEffect, useState } from 'react'
+
+const Four = () => {
+
+    const [data,setdata]=useState("apple")
+
+
+
+
+
+    const handleClick = () => {
+    setdata("banana"); // setdata
+  };
+
+  useEffect(()=>{
+   console.log(data)
+
+  },[data])
+
+
+  return (
+    <div>
+    
+     <p>{data}</p> 
+    <button onClick={handleClick}> Change Data </button>
+
+      
+    </div>
+  )
+}
+
+export default Four
+
+
+
+
