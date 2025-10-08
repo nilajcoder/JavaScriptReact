@@ -277,41 +277,42 @@ console.log(sum(1,2,3,4))
 
 console.log(typeof null);//object
 
-
-  let a = 5;
-let b = "5";
+Day 1
+----------
+1.   let a = 5;
+    let b = "5";
 console.log(a == b); //true
 console.log(a === b); //false
 
 
-console.log(0.1 + 0.2 === 0.3); //false
+2. console.log(0.1 + 0.2 === 0.3); //false
 
 
-console.log([] == []);//false
+3. console.log([] == []);//false
 
-console.log(typeof NaN); //number
+4. console.log(typeof NaN); //number
 
-let x;
+5. let x;
 console.log(x + 2); //NAN
 
 
-let x;
+6. let x;
 console.log(x - 2); //NAN
 
 
 
-let x;
+7. let x;
 console.log(x * 2); //NAN
 
 
-let x;
+8. let x;
 console.log(x / 2); //NAN
 
 
-console.log("5" - 2); //3 number
+9. console.log("5" - 2); //3 number
 console.log("5" + 2); //52 string
 
-console.log(typeof typeof 1);//string   typeof number  number is string
+10. console.log(typeof typeof 1);//string   typeof number  number is string
 
 console.log(typeof typeof 10.25);//string   
 
@@ -330,11 +331,187 @@ console.log(typeof typeof true);//string
 
 console.log(3 > 2 > 1); //false   true>1   type coreceion false
 
-let a = [1, 2, 3];
+11.let a = [1, 2, 3];
 let b = a;
 b.push(4);
 console.log(a);//[1,2,3,4]
+
+
+Day 2
+__________
+
+1. let a;
+console.log(a); //undefined
+console.log(typeof a); //undefined
+
+
+2. console.log(null == undefined); //true
+console.log(null === undefined); //false
+
+
+3.   let x = "10";
+     let y = 10;
+console.log(x + y); //1010
+console.log(x - y);//0
+
+
+4.   console.log("2" > "12"); //true
+
+console.log(1 > "12"); //false
+
+console.log(1 < "12"); //true
+
+console.log(null > "12"); //false
+
+console.log(null < "12"); //true
+
+console.log(undefined > "12"); //false
+
+console.log(undefined < "12"); //false
+
+console.log(-1 > "12"); //false
+
+🧩 1. console.log("2" > "12"); // true
+
+🧠 Explanation:
+
+Both "2" and "12" are strings, not numbers.
+
+When both sides are strings, JavaScript performs a lexicographical (dictionary-like) comparison — character by character from left to right.
+
+"2" is compared with "1" first.
+
+'2' (Unicode 50) is greater than '1' (Unicode 49).
+
+✅ Output → true
+
+🧩 2. console.log(1 > "12"); // false
+
+🧠 Explanation:
+
+Here, 1 is a number and "12" is a string.
+
+When a number is compared to a string, JS converts the string to a number.
+
+"12" → 12
+
+
+Then it compares 1 > 12 → false.
+
+✅ Output → false
+
+🧩 3. console.log(1 < "12"); // true
+
+🧠 Explanation:
+
+"12" is again converted to 12.
+
+So 1 < 12 → true.
+
+✅ Output → true
+
+🧩 4. console.log(null > "12"); // false
+
+🧠 Explanation:
+
+When comparing null with a number or string, JavaScript first converts:
+
+null → 0
+
+"12" → 12
+
+Then it compares 0 > 12 → false.
+
+✅ Output → false
+
+🧩 5. console.log(null < "12"); // true
+
+🧠 Explanation:
+
+Again, null → 0 and "12" → 12.
+
+0 < 12 → true.
+
+✅ Output → true
+
+🧩 6. console.log(undefined > "12"); // false
+
+🧠 Explanation:
+
+undefined is not converted to 0 like null.
+
+When undefined is compared to a number, it becomes NaN (Not a Number).
+
+Any comparison with NaN (except !=) is false.
+
+✅ Output → false
+
+🧩 7. console.log(undefined < "12"); // false
+
+🧠 Explanation:
+
+Same reason as above — undefined → NaN.
+
+Any comparison with NaN is false.
+
+✅ Output → false
+
+🧩 8. console.log(-1 > "12"); // false
+
+🧠 Explanation:
+
+"12" → number 12.
+
+Compare -1 > 12 → false.
+
+✅ Output → false
+
+
+
+
+5.  let a = 1;
+let b = a++;
+console.log(a, b); //2 1
+
+let c = 1;
+let d = ++c;
+console.log(c, d); //2 2
+
+
+
+6.  
+let a = 5;
+let b = "5";
+console.log(a != b); //false
+console.log(a !== b); //true
+
+
+7. 
+console.log([] + []); //""
+console.log([] + {});// [object Object]
+console.log({} + []);//[object Object]
+
+ 8.let value = "hello";
+console.log(value[1]);//e
+console.log(value[5]);// undefined
+
+
+9.  let a = 0;
+console.log(Boolean(a)); //false
+console.log(!a);//true
+console.log(!!a);// false
 */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
