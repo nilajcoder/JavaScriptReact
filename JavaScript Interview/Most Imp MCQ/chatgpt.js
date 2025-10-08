@@ -325,6 +325,7 @@ console.log( typeof typeof Infinity);//string
 console.log(typeof Object);//function
 
 
+console.log( typeof typeof Object);//string   
 console.log(typeof typeof true);//string
 
 console.log(3 > 2 > 1); //false   true>1   type coreceion false
