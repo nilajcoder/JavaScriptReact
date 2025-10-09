@@ -500,6 +500,11 @@ console.log(value[5]);// undefined
 console.log(Boolean(a)); //false
 console.log(!a);//true
 console.log(!!a);// false
+
+10. 
+let a;
+console.log(a + 1); //NAN
+console.log(typeof a); //undfined
 */
 
 
