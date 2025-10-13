@@ -505,7 +505,102 @@ console.log(!!a);// false
 let a;
 console.log(a + 1); //NAN
 console.log(typeof a); //undfined
+
+
+Day 3
+------------
+
+1. 
+console.log(Boolean("false")); //true
+console.log(Boolean(false)); // false
+
+2. 
+let a = [1, 2];
+let b = [1, 2];
+console.log(a == b); //false
+console.log(a === b); //false
+
+3. console.log([] == ![]); //true 
+
+
+4. let a = "10";
+let b = 10;
+console.log(a + b); //1010 string
+console.log(+a + b); //20 num
+
+
+5. 
+
+console.log(+""); //0
+console.log(+"hello");// NAN
+console.log(+true); //1
+console.log(+false);//0
+
+
+6. let name = "Ram";
+function test() {
+  console.log(name);
+  let name = "Singh";
+}
+test();  // ref eroor
+
+
+var name = "Ram";
+function test() {
+  console.log(name);// undefined
+  var name = "Singh";
+}
+test();  // undefined
+
+
+var name = "Ram";
+function test() {
+     var name = "Singh";
+  console.log(name);// Sing
+ 
+}
+test();  // sing
+
+
+let name = "Ram";
+function test() {
+     let name = "Singh";
+  console.log(name);// Sing
+ 
+}
+test();  // sing
+
+
+7. 
+console.log(!!""); //false
+console.log(!!"0");//true
+console.log(!!0); //false
+
+
+8. console.log(null == 0); //false
+console.log(null >= 0); //true
+console.log(null <= 0); //true
+
+
+9. 
+console.log(undefined === null); //false
+
+console.log(undefined ==null); //true
+
+10. let x = 10;
+console.log(x && 5); //5
+console.log(0 && 5); //0
+console.log(x || 5); //10
+console.log(0 || 5); //5
 */
+
+
+
+
+
+
+
+
 
 
 
