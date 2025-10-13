@@ -592,7 +592,90 @@ console.log(x && 5); //5
 console.log(0 && 5); //0
 console.log(x || 5); //10
 console.log(0 || 5); //5
+
+
+Day 4
+------------
+
+1. 
+console.log(a); //undefined
+var a = 5; 
+
+2. 
+console.log(a); //ref error
+let a = 5;
+
+
+3. 
+sayHi(); // Hello!  Function Declaration hoisted
+function sayHi() {
+  console.log("Hello!");
+}
+
+4. greet(); //ref error because Funtion expression not hoisted
+var greet = function() {
+  console.log("Hi there!");
+};
+
+
+5. 
+var x = 10;
+function test() {
+  console.log(x); //undefined
+  var x = 20;
+}
+test();
+
+
+6. let a = 5;
+{
+  let a = 10;
+  console.log(a);//10
+}
+console.log(a);//5
+
+
+7. function check(x) {
+  if (x) {
+    console.log("Truthy");
+  } else {
+    console.log("Falsy");
+  }
+}
+check([]); //truethy
+check({});//Falsy
+check("");//falsey
+
+
+8. const num = 5;
+// num = 10;
+console.log(num);//5
+
+
+9. console.log(typeof NaN === "number"); // true
+console.log(NaN === NaN); //false
+
+
+10. 
+console.log(1 + "2" + "2"); //122
+console.log(1 + +"2" + "2") //32
+console.log(1 + -"1" + "2");//02
+console.log(+"1" + "1" + "2"); //112
+console.log("A" - "B" + "2"); //NAN2
+console.log("A" - "B" + 2); //NAN
 */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
