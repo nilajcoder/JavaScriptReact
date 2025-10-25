@@ -22,7 +22,7 @@ const newArray = map(arr, plusone); // [2,3,4]
 The function increases each value in the array by one. 
 */
 
-var map = function(arr, fn) {
+var map = function (arr, fn) {
     const result = [];
 
     for (let i = 0; i < arr.length; i++) {
@@ -36,4 +36,4 @@ function plusOne(n) {
     return n + 1;
 }
 
-console.log(map([1,2,3], plusOne)); // [2,3,4]
+console.log(map([1, 2, 3], plusOne)); // [2,3,4]
