@@ -1,6 +1,6 @@
 /*
 
-WAP in Js Input Numbers and add them 
+1. WAP in Js Input Numbers and add them 
 Sum of digits
 Expample - 531
   5+3+1=9
