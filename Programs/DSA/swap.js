@@ -1,7 +1,7 @@
 
 /*
 
-WAP in Js Function SWAP Two Numbers
+7.WAP in Js Function SWAP Two Numbers
 
 input -5 6
 
