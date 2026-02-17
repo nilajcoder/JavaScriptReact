@@ -18,4 +18,14 @@ function factorial(num) {
         return num * factorial(num - 1)
     }
 }
-console.log(factorial(5))//120
+
+function printfactorial(n){
+    for(let i=1;i<=n;i++){
+        console.log(i +"=",factorial(i))
+    }
+
+}
+
+printfactorial(5)//120
+
+
